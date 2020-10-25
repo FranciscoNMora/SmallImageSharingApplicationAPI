@@ -88,7 +88,6 @@ def create_auth_token(sender, instance=None, created=False, **kwargs):
     """With this signal we ensure that any new user has a REST token"""
     if created:
         Token.objects.create(user=instance)
-        #Profile.objects.get_or_create(user=instance)
 
 
 @receiver(post_save, sender=settings.AUTH_USER_MODEL)
