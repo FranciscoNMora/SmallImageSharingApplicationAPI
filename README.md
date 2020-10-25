@@ -45,5 +45,7 @@ python manage.py runserver
 
 ## API Documentation
 The documentation of the API is available in the following URLs:
+
 -/doc/redoc/ : ReDoc documentation
+
 -/doc/swagger/ : SwaggerUI documentation
