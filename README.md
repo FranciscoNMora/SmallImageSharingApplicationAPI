@@ -14,11 +14,11 @@ API requirements:
   
 ## User Manual
 
-Setup the environment (assumes that python 3.7 is installed)
+Setup the environment (assumes that python3.7 is installed)
 ```bash
 git clone https://github.com/FranciscoNMora/SmallImageSharingApplicationAPI.git
-cd hedgehogLab
-python3.7 -m virtualenv venv
+cd SmallImageSharingApplicationAPI
+python3 -m virtualenv venv
 source venv/bin/activate
 pip install -r requirements.txt
 ```
@@ -28,7 +28,7 @@ Run migrations
 python manage.py migrate
 ```
 
-Create superuser to user admin site
+Create superuser to access admin site
 ```bash
 python manage.py createsuperuser
 ```
