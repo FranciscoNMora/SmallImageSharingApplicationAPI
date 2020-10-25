@@ -1,0 +1,24 @@
+*.mo
+*.err
+*.log
+*.pot
+*.pyc
+.env
+*.sqlite3
+
+# Git
+.gitattributes
+
+# pycharm
+.idea
+
+# Vagrant
+.vagrant
+
+# virtualenvs
+venv*/
+
+media/*
+media_test/*
+static/*
+local_settings.py

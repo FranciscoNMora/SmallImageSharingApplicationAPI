@@ -1,0 +1,64 @@
+- model: auth.user
+  pk: 2
+  fields:
+    password: pbkdf2_sha256$216000$ukcQgFuUKXEh$mexSyNj0WQvTEVZAFnO5ntolhkleqW0ItqsCA26Tqmc=
+    username: user_1
+- model: auth.user
+  pk: 3
+  fields:
+    password: pbkdf2_sha256$216000$4EDFOA0wJaoa$d1kJP6w2UrAGY4H5+7SRGMlmVuAW9ePcTKaFLWHspyY=
+    username: user_2
+- model: auth.user
+  pk: 4
+  fields:
+    password: pbkdf2_sha256$216000$c14Jp3fizVOa$7dXIAgmt4QL40HLsakYyKL10CYJyAeV1eFcrNPqTW30=
+    username: user_3
+
+- model: PostsApp.profile
+  pk: 1
+  fields:
+    user: 4
+    following: []
+- model: PostsApp.profile
+  pk: 2
+  fields:
+    user: 2
+    following:
+      - 4
+- model: PostsApp.profile
+  pk: 3
+  fields:
+    user: 3
+    following:
+      - 2
+      - 4
+- model: PostsApp.post
+  pk: 6
+  fields:
+    post_ref: 70e8a23e-4873-4961-83aa-9e780d3902e1
+    author: 2
+    caption: caption1
+    created: 2020-10-21 13:10:08.345337+00:00
+    image: image_1.png
+    liked:
+    - 3
+- model: PostsApp.post
+  pk: 7
+  fields:
+    post_ref: 7787fc71-72c9-4ecf-a5a8-7d2642589ff6
+    author: 2
+    caption: caption2
+    created: 2020-10-21 13:12:14.663434+00:00
+    image: image_2.png
+    liked:
+    - 3
+    - 4
+- model: PostsApp.post
+  pk: 8
+  fields:
+    post_ref: f2d3e4ac-cc77-4471-b898-6b1031ab9dfa
+    author: 2
+    caption: caption3
+    created: 2020-10-21 13:21:46.094084+00:00
+    image: image_3.png
+    liked: []
